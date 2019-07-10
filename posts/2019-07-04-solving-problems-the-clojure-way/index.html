@@ -73,7 +73,7 @@
     </div><!--/.container-fluid -->
 </nav>
 
-<button onclick="scrollToTop()" id="goToTop" title="Go to top">Top</button>
+<button onclick="scrollToTop()" id="btn-top" title="Go to top">Top</button>
 
 <div class="container">
     <div class="row">
@@ -954,26 +954,20 @@
 </div>
 
 
-    <div id="prev-next">
+    <div id="prev-next" data-href="hello">
         
         
     </div>
 
     
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_config = function () {
-            this.page.url = "https://ijmo.github.io/posts/2019-07-04-solving-problems-the-clojure-way/";
-            this.page.identifier = "함수형으로 문제 해결하기 (스크린샷)";
-        };
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//ijmo-github-io.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    
 
+    <script src="https://utteranc.es/client.js"
+        repo="ijmo/ijmo.github.io"
+        issue-term="/posts/2019-07-04-solving-problems-the-clojure-way/"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
 
 </div>
 
@@ -994,9 +988,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        document.getElementById("goToTop").style.display = "block";
+        document.getElementById("btn-top").style.display = "block";
     } else {
-        document.getElementById("goToTop").style.display = "none";
+        document.getElementById("btn-top").style.display = "none";
     }
 }
 

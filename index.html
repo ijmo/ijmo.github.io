@@ -73,7 +73,7 @@
     </div><!--/.container-fluid -->
 </nav>
 
-<button onclick="scrollToTop()" id="goToTop" title="Go to top">Top</button>
+<button onclick="scrollToTop()" id="btn-top" title="Go to top">Top</button>
 
 <div class="container">
     <div class="row">
@@ -955,15 +955,18 @@
 
 
     
-    <div id="comments">
-        <a href="/posts/2019-07-04-solving-problems-the-clojure-way/#disqus_thread">View Comments</a>
-    </div>
-    
 
     <div id="prev-next">
         
         
     </div>
+    <script src="https://utteranc.es/client.js"
+        repo="ijmo/ijmo.github.io"
+        issue-term="/posts/2019-07-04-solving-problems-the-clojure-way/"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
 </div>
 
             </div>
@@ -983,9 +986,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        document.getElementById("goToTop").style.display = "block";
+        document.getElementById("btn-top").style.display = "block";
     } else {
-        document.getElementById("goToTop").style.display = "none";
+        document.getElementById("btn-top").style.display = "none";
     }
 }
 

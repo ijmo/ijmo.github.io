@@ -73,7 +73,7 @@
     </div><!--/.container-fluid -->
 </nav>
 
-<button onclick="scrollToTop()" id="goToTop" title="Go to top">Top</button>
+<button onclick="scrollToTop()" id="btn-top" title="Go to top">Top</button>
 
 <div class="container">
     <div class="row">
@@ -114,9 +114,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        document.getElementById("goToTop").style.display = "block";
+        document.getElementById("btn-top").style.display = "block";
     } else {
-        document.getElementById("goToTop").style.display = "none";
+        document.getElementById("btn-top").style.display = "none";
     }
 }
 
