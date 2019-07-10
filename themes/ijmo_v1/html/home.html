@@ -16,5 +16,12 @@
         <a class="right" href="{{post.next.uri}}">{{post.next.title}} &raquo;</a>
         {% endif %}
     </div>
+    <script src="https://utteranc.es/client.js"
+        repo="ijmo/ijmo.github.io"
+        issue-term="{{ post.uri }}"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
 </div>
 {% endblock %}

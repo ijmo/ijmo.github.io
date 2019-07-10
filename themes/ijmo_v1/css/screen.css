@@ -86,7 +86,7 @@ ol, p, ul {
     color: #fff;
 }
 
-#goToTop {
+#btn-top {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -94,16 +94,12 @@ ol, p, ul {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: gray;
+    background-color: rgba(75, 75, 75, 0.4);
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
-}
-  
-#goToTop:hover {
-background-color: #b80000;
 }
 
 #content {

@@ -3,7 +3,7 @@
 {% block content %}
 <div id="post">
     {% include "/html/post-content.html" %}
-    <div id="prev-next">
+    <div id="prev-next" data-href="hello">
         {% if post.prev %}
         <a href="{{post.prev.uri}}">&laquo; {{post.prev.title}}</a>
         {% endif %}
@@ -27,6 +27,13 @@
     </script>
     {% endif %}
 
+    <script src="https://utteranc.es/client.js"
+        repo="ijmo/ijmo.github.io"
+        issue-term="{{ post.uri }}"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
 
 </div>
 {% endblock %}
