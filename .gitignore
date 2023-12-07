@@ -1,3 +1,6 @@
 public/
 target/
 .nrepl-port
+.DS_Store
+.clj-kondo/
+.lsp/
