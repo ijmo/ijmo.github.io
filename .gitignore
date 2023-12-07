@@ -6,10 +6,12 @@ pom.xml.asc
 /target/
 /checkouts/
 /public
+.clj-kondo/
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/
 .lein-failures
+.lsp/
 .nrepl-port
 .DS_Store
 .vscode/
